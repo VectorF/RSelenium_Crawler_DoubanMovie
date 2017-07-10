@@ -123,7 +123,7 @@
           name<-doc%>%
           	html_nodes("a")%>%
           	html_text()%>%
-          	str_replace_all(pattern="\s",replacement="")
+          	str_replace_all(pattern="\\s",replacement="")
           # 得到评分 rate
           rate<-doc%>%
           	html_nodes("span.rating_nums")%>%
